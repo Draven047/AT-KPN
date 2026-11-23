@@ -1,0 +1,760 @@
+{
+  "engine" : "macOS CoreText",
+  "fonts" : [
+    {
+      "cases" : [
+        {
+          "language" : "English",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "English",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "English",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Kannada",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Kannada",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Kannada",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Hindi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Hindi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Hindi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Marathi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Marathi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Marathi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Malayalam",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Malayalam",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Malayalam",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Tamil",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Tamil",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Tamil",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Telugu",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Telugu",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Telugu",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Bengali",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Bengali",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Bengali",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Mixed",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Mixed",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        },
+        {
+          "language" : "Mixed",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Bold"
+          ]
+        }
+      ],
+      "file" : "AT-KPN-Bold.ttf",
+      "pass" : true,
+      "registered" : true,
+      "resolved_postscript_name" : "AT-KPN-Bold"
+    },
+    {
+      "cases" : [
+        {
+          "language" : "English",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "English",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "English",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Kannada",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Kannada",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Kannada",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Hindi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Hindi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Hindi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Marathi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Marathi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Marathi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Malayalam",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Malayalam",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Malayalam",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Tamil",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Tamil",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Tamil",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Telugu",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Telugu",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Telugu",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Bengali",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Bengali",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Bengali",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Mixed",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Mixed",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        },
+        {
+          "language" : "Mixed",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Light"
+          ]
+        }
+      ],
+      "file" : "AT-KPN-Light.ttf",
+      "pass" : true,
+      "registered" : true,
+      "resolved_postscript_name" : "AT-KPN-Light"
+    },
+    {
+      "cases" : [
+        {
+          "language" : "English",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "English",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "English",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Kannada",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Kannada",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Kannada",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Hindi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Hindi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Hindi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Marathi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Marathi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Marathi",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Malayalam",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Malayalam",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Malayalam",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Tamil",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Tamil",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Tamil",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Telugu",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Telugu",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Telugu",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Bengali",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Bengali",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Bengali",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Mixed",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "title",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Mixed",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "text",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        },
+        {
+          "language" : "Mixed",
+          "missing_glyphs" : 0,
+          "pass" : true,
+          "sample" : "clusters",
+          "used_fonts" : [
+            "AT-KPN-Regular"
+          ]
+        }
+      ],
+      "file" : "AT-KPN-Regular.ttf",
+      "pass" : true,
+      "registered" : true,
+      "resolved_postscript_name" : "AT-KPN-Regular"
+    }
+  ],
+  "pass" : true,
+  "registration_scope" : "process only"
+}

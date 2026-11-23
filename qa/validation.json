@@ -1,0 +1,102 @@
+{
+  "pass": true,
+  "fonts": [
+    {
+      "font": "AT-KPN-Bold.ttf",
+      "pass": true,
+      "errors": [],
+      "glyphs": 3615,
+      "unicode_characters": 1291,
+      "merged_shaping_cases": 9810,
+      "upstream_native_sequence_cases": 9797,
+      "missing_glyph_cases": 0,
+      "merge_regressions": 0,
+      "upstream_sequence_regressions": 0,
+      "merge_examples": [],
+      "upstream_examples": [],
+      "missing_examples": [],
+      "sanitizer": [
+        {
+          "file": "AT-KPN-Bold.ttf",
+          "exit_code": 0,
+          "log": ""
+        },
+        {
+          "file": "AT-KPN-Bold.woff2",
+          "exit_code": 0,
+          "log": ""
+        }
+      ],
+      "outline_y_bounds": [
+        -1119,
+        1242
+      ],
+      "sha256": "b62a31b12d2aa22a51faede4f47c1b5e69c9d8c60ee2eb4d8711e2b75a9ab950"
+    },
+    {
+      "font": "AT-KPN-Light.ttf",
+      "pass": true,
+      "errors": [],
+      "glyphs": 3615,
+      "unicode_characters": 1291,
+      "merged_shaping_cases": 9810,
+      "upstream_native_sequence_cases": 9797,
+      "missing_glyph_cases": 0,
+      "merge_regressions": 0,
+      "upstream_sequence_regressions": 0,
+      "merge_examples": [],
+      "upstream_examples": [],
+      "missing_examples": [],
+      "sanitizer": [
+        {
+          "file": "AT-KPN-Light.ttf",
+          "exit_code": 0,
+          "log": ""
+        },
+        {
+          "file": "AT-KPN-Light.woff2",
+          "exit_code": 0,
+          "log": ""
+        }
+      ],
+      "outline_y_bounds": [
+        -1065,
+        1171
+      ],
+      "sha256": "06583fbbb08ed389b3c95c94c00c67958ee6964e106fe544d06af518635803a0"
+    },
+    {
+      "font": "AT-KPN-Regular.ttf",
+      "pass": true,
+      "errors": [],
+      "glyphs": 3615,
+      "unicode_characters": 1291,
+      "merged_shaping_cases": 9810,
+      "upstream_native_sequence_cases": 9797,
+      "missing_glyph_cases": 0,
+      "merge_regressions": 0,
+      "upstream_sequence_regressions": 0,
+      "merge_examples": [],
+      "upstream_examples": [],
+      "missing_examples": [],
+      "sanitizer": [
+        {
+          "file": "AT-KPN-Regular.ttf",
+          "exit_code": 0,
+          "log": ""
+        },
+        {
+          "file": "AT-KPN-Regular.woff2",
+          "exit_code": 0,
+          "log": ""
+        }
+      ],
+      "outline_y_bounds": [
+        -1087,
+        1201
+      ],
+      "sha256": "866ba2046fac46e0c29a034ec3a4cd2b683d0404c62ad4fdf856032ae58d4320"
+    }
+  ],
+  "scope": "Automated source-to-edited glyph sequences, exact component-to-merged outlines and positions, native sample coverage, metadata, bounds, WOFF2 equivalence and OTS. Native-reader review pending."
+}

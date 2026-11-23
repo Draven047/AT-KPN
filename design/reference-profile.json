@@ -1,0 +1,1152 @@
+{
+  "project": "AT-KPN",
+  "requested_weights": {
+    "Light": 300,
+    "Regular": 400,
+    "Bold": 700
+  },
+  "languages": [
+    "Kannada",
+    "Hindi",
+    "Malayalam",
+    "Tamil",
+    "Telugu",
+    "Marathi",
+    "Bengali"
+  ],
+  "script_count": 6,
+  "references": [
+    {
+      "reference_file": "CoconRegularFont.otf",
+      "sha256": "b3baf1290a87b0e3c03bf653f995aaaa378fe21db582da63e393266188c6a4d6",
+      "units_per_em": 1000,
+      "metrics": {
+        "A": {
+          "advance": 622,
+          "bounds": [
+            20,
+            0,
+            612,
+            685
+          ]
+        },
+        "B": {
+          "advance": 605,
+          "bounds": [
+            64,
+            -3,
+            564,
+            688
+          ]
+        },
+        "C": {
+          "advance": 598,
+          "bounds": [
+            42,
+            -6,
+            586,
+            695
+          ]
+        },
+        "D": {
+          "advance": 665,
+          "bounds": [
+            65,
+            -6,
+            627,
+            687
+          ]
+        },
+        "E": {
+          "advance": 560,
+          "bounds": [
+            60,
+            -5,
+            538,
+            685
+          ]
+        },
+        "F": {
+          "advance": 491,
+          "bounds": [
+            65,
+            0,
+            486,
+            685
+          ]
+        },
+        "G": {
+          "advance": 654,
+          "bounds": [
+            42,
+            -12,
+            612,
+            697
+          ]
+        },
+        "H": {
+          "advance": 677,
+          "bounds": [
+            65,
+            0,
+            612,
+            685
+          ]
+        },
+        "I": {
+          "advance": 272,
+          "bounds": [
+            68,
+            0,
+            203,
+            685
+          ]
+        },
+        "J": {
+          "advance": 390,
+          "bounds": [
+            4,
+            -12,
+            335,
+            685
+          ]
+        },
+        "K": {
+          "advance": 609,
+          "bounds": [
+            65,
+            -3,
+            604,
+            685
+          ]
+        },
+        "L": {
+          "advance": 521,
+          "bounds": [
+            70,
+            -6,
+            516,
+            685
+          ]
+        },
+        "M": {
+          "advance": 901,
+          "bounds": [
+            50,
+            0,
+            847,
+            685
+          ]
+        },
+        "N": {
+          "advance": 688,
+          "bounds": [
+            65,
+            0,
+            623,
+            685
+          ]
+        },
+        "O": {
+          "advance": 725,
+          "bounds": [
+            42,
+            -12,
+            683,
+            697
+          ]
+        },
+        "P": {
+          "advance": 563,
+          "bounds": [
+            65,
+            0,
+            548,
+            690
+          ]
+        },
+        "Q": {
+          "advance": 735,
+          "bounds": [
+            42,
+            -96,
+            707,
+            697
+          ]
+        },
+        "R": {
+          "advance": 603,
+          "bounds": [
+            65,
+            -5,
+            583,
+            691
+          ]
+        },
+        "S": {
+          "advance": 572,
+          "bounds": [
+            45,
+            -12,
+            527,
+            697
+          ]
+        },
+        "T": {
+          "advance": 555,
+          "bounds": [
+            5,
+            0,
+            548,
+            685
+          ]
+        },
+        "U": {
+          "advance": 663,
+          "bounds": [
+            50,
+            -12,
+            612,
+            685
+          ]
+        },
+        "V": {
+          "advance": 618,
+          "bounds": [
+            9,
+            -5,
+            601,
+            685
+          ]
+        },
+        "W": {
+          "advance": 953,
+          "bounds": [
+            9,
+            -6,
+            938,
+            685
+          ]
+        },
+        "X": {
+          "advance": 684,
+          "bounds": [
+            30,
+            -8,
+            669,
+            686
+          ]
+        },
+        "Y": {
+          "advance": 571,
+          "bounds": [
+            5,
+            0,
+            556,
+            685
+          ]
+        },
+        "Z": {
+          "advance": 587,
+          "bounds": [
+            40,
+            0,
+            547,
+            685
+          ]
+        },
+        "a": {
+          "advance": 529,
+          "bounds": [
+            41,
+            -9,
+            488,
+            550
+          ]
+        },
+        "b": {
+          "advance": 631,
+          "bounds": [
+            67,
+            -12,
+            589,
+            720
+          ]
+        },
+        "c": {
+          "advance": 510,
+          "bounds": [
+            40,
+            -10,
+            478,
+            545
+          ]
+        },
+        "d": {
+          "advance": 615,
+          "bounds": [
+            40,
+            -12,
+            550,
+            720
+          ]
+        },
+        "e": {
+          "advance": 558,
+          "bounds": [
+            40,
+            -12,
+            520,
+            552
+          ]
+        },
+        "f": {
+          "advance": 368,
+          "bounds": [
+            65,
+            0,
+            378,
+            730
+          ]
+        },
+        "g": {
+          "advance": 606,
+          "bounds": [
+            43,
+            -174,
+            541,
+            552
+          ]
+        },
+        "h": {
+          "advance": 610,
+          "bounds": [
+            70,
+            0,
+            545,
+            720
+          ]
+        },
+        "i": {
+          "advance": 333,
+          "bounds": [
+            70,
+            -5,
+            323,
+            735
+          ]
+        },
+        "j": {
+          "advance": 303,
+          "bounds": [
+            -44,
+            -175,
+            238,
+            737
+          ]
+        },
+        "k": {
+          "advance": 572,
+          "bounds": [
+            70,
+            -3,
+            572,
+            720
+          ]
+        },
+        "l": {
+          "advance": 326,
+          "bounds": [
+            70,
+            -5,
+            331,
+            720
+          ]
+        },
+        "m": {
+          "advance": 914,
+          "bounds": [
+            66,
+            0,
+            849,
+            552
+          ]
+        },
+        "n": {
+          "advance": 605,
+          "bounds": [
+            65,
+            0,
+            540,
+            552
+          ]
+        },
+        "o": {
+          "advance": 602,
+          "bounds": [
+            40,
+            -12,
+            562,
+            552
+          ]
+        },
+        "p": {
+          "advance": 620,
+          "bounds": [
+            65,
+            -170,
+            580,
+            552
+          ]
+        },
+        "q": {
+          "advance": 619,
+          "bounds": [
+            40,
+            -170,
+            554,
+            552
+          ]
+        },
+        "r": {
+          "advance": 386,
+          "bounds": [
+            65,
+            0,
+            376,
+            545
+          ]
+        },
+        "s": {
+          "advance": 492,
+          "bounds": [
+            39,
+            -12,
+            453,
+            552
+          ]
+        },
+        "t": {
+          "advance": 405,
+          "bounds": [
+            70,
+            -6,
+            390,
+            662
+          ]
+        },
+        "u": {
+          "advance": 604,
+          "bounds": [
+            65,
+            -12,
+            539,
+            540
+          ]
+        },
+        "v": {
+          "advance": 517,
+          "bounds": [
+            9,
+            -6,
+            502,
+            540
+          ]
+        },
+        "w": {
+          "advance": 810,
+          "bounds": [
+            9,
+            -6,
+            795,
+            543
+          ]
+        },
+        "x": {
+          "advance": 554,
+          "bounds": [
+            30,
+            -8,
+            542,
+            540
+          ]
+        },
+        "y": {
+          "advance": 508,
+          "bounds": [
+            10,
+            -175,
+            493,
+            540
+          ]
+        },
+        "z": {
+          "advance": 505,
+          "bounds": [
+            40,
+            0,
+            465,
+            540
+          ]
+        },
+        "0": {
+          "advance": 590,
+          "bounds": [
+            36,
+            -12,
+            553,
+            697
+          ]
+        },
+        "1": {
+          "advance": 411,
+          "bounds": [
+            -5,
+            0,
+            321,
+            685
+          ]
+        },
+        "2": {
+          "advance": 590,
+          "bounds": [
+            54,
+            0,
+            532,
+            697
+          ]
+        },
+        "3": {
+          "advance": 590,
+          "bounds": [
+            57,
+            -12,
+            523,
+            697
+          ]
+        },
+        "4": {
+          "advance": 590,
+          "bounds": [
+            17,
+            0,
+            565,
+            685
+          ]
+        },
+        "5": {
+          "advance": 590,
+          "bounds": [
+            65,
+            -12,
+            534,
+            685
+          ]
+        },
+        "6": {
+          "advance": 590,
+          "bounds": [
+            48,
+            -12,
+            547,
+            697
+          ]
+        },
+        "7": {
+          "advance": 222,
+          "bounds": null
+        },
+        "8": {
+          "advance": 590,
+          "bounds": [
+            53,
+            -12,
+            539,
+            697
+          ]
+        },
+        "9": {
+          "advance": 580,
+          "bounds": [
+            39,
+            -12,
+            538,
+            697
+          ]
+        }
+      }
+    },
+    {
+      "reference_file": "Cocon-Bold-Font.otf",
+      "sha256": "db822124b088326b6832699985336aaa0d1ad0f50077979aa120514b12af5f35",
+      "units_per_em": 1000,
+      "metrics": {
+        "A": {
+          "advance": 670,
+          "bounds": [
+            5,
+            0,
+            665,
+            690
+          ]
+        },
+        "B": {
+          "advance": 663,
+          "bounds": [
+            60,
+            -8,
+            623,
+            700
+          ]
+        },
+        "C": {
+          "advance": 651,
+          "bounds": [
+            40,
+            -16,
+            626,
+            706
+          ]
+        },
+        "D": {
+          "advance": 720,
+          "bounds": [
+            60,
+            -9,
+            680,
+            700
+          ]
+        },
+        "E": {
+          "advance": 606,
+          "bounds": [
+            55,
+            -9,
+            576,
+            690
+          ]
+        },
+        "F": {
+          "advance": 539,
+          "bounds": [
+            61,
+            0,
+            534,
+            690
+          ]
+        },
+        "G": {
+          "advance": 701,
+          "bounds": [
+            40,
+            -16,
+            651,
+            706
+          ]
+        },
+        "H": {
+          "advance": 725,
+          "bounds": [
+            60,
+            0,
+            665,
+            690
+          ]
+        },
+        "I": {
+          "advance": 330,
+          "bounds": [
+            70,
+            0,
+            260,
+            690
+          ]
+        },
+        "J": {
+          "advance": 449,
+          "bounds": [
+            5,
+            -10,
+            379,
+            690
+          ]
+        },
+        "K": {
+          "advance": 717,
+          "bounds": [
+            70,
+            -7,
+            714,
+            690
+          ]
+        },
+        "L": {
+          "advance": 556,
+          "bounds": [
+            70,
+            -8,
+            551,
+            690
+          ]
+        },
+        "M": {
+          "advance": 985,
+          "bounds": [
+            55,
+            0,
+            930,
+            690
+          ]
+        },
+        "N": {
+          "advance": 725,
+          "bounds": [
+            60,
+            0,
+            675,
+            690
+          ]
+        },
+        "O": {
+          "advance": 764,
+          "bounds": [
+            40,
+            -16,
+            724,
+            706
+          ]
+        },
+        "P": {
+          "advance": 607,
+          "bounds": [
+            60,
+            0,
+            597,
+            700
+          ]
+        },
+        "Q": {
+          "advance": 779,
+          "bounds": [
+            40,
+            -102,
+            764,
+            706
+          ]
+        },
+        "R": {
+          "advance": 658,
+          "bounds": [
+            60,
+            -5,
+            648,
+            700
+          ]
+        },
+        "S": {
+          "advance": 616,
+          "bounds": [
+            37,
+            -16,
+            578,
+            706
+          ]
+        },
+        "T": {
+          "advance": 611,
+          "bounds": [
+            10,
+            0,
+            601,
+            689
+          ]
+        },
+        "U": {
+          "advance": 742,
+          "bounds": [
+            60,
+            -16,
+            682,
+            690
+          ]
+        },
+        "V": {
+          "advance": 674,
+          "bounds": [
+            10,
+            -8,
+            659,
+            690
+          ]
+        },
+        "W": {
+          "advance": 1024,
+          "bounds": [
+            10,
+            -8,
+            1009,
+            690
+          ]
+        },
+        "X": {
+          "advance": 732,
+          "bounds": [
+            32,
+            -7,
+            710,
+            690
+          ]
+        },
+        "Y": {
+          "advance": 629,
+          "bounds": [
+            5,
+            0,
+            619,
+            690
+          ]
+        },
+        "Z": {
+          "advance": 641,
+          "bounds": [
+            36,
+            0,
+            605,
+            690
+          ]
+        },
+        "a": {
+          "advance": 584,
+          "bounds": [
+            40,
+            -15,
+            539,
+            566
+          ]
+        },
+        "b": {
+          "advance": 677,
+          "bounds": [
+            55,
+            -15,
+            637,
+            740
+          ]
+        },
+        "c": {
+          "advance": 527,
+          "bounds": [
+            40,
+            -12,
+            502,
+            565
+          ]
+        },
+        "d": {
+          "advance": 679,
+          "bounds": [
+            40,
+            -16,
+            627,
+            740
+          ]
+        },
+        "e": {
+          "advance": 615,
+          "bounds": [
+            40,
+            -16,
+            579,
+            567
+          ]
+        },
+        "f": {
+          "advance": 378,
+          "bounds": [
+            57,
+            0,
+            408,
+            750
+          ]
+        },
+        "g": {
+          "advance": 646,
+          "bounds": [
+            40,
+            -182,
+            594,
+            566
+          ]
+        },
+        "h": {
+          "advance": 666,
+          "bounds": [
+            60,
+            0,
+            614,
+            740
+          ]
+        },
+        "i": {
+          "advance": 366,
+          "bounds": [
+            57,
+            -8,
+            356,
+            769
+          ]
+        },
+        "j": {
+          "advance": 325,
+          "bounds": [
+            -60,
+            -188,
+            268,
+            769
+          ]
+        },
+        "k": {
+          "advance": 630,
+          "bounds": [
+            60,
+            -5,
+            629,
+            740
+          ]
+        },
+        "l": {
+          "advance": 372,
+          "bounds": [
+            57,
+            -8,
+            369,
+            740
+          ]
+        },
+        "m": {
+          "advance": 967,
+          "bounds": [
+            52,
+            0,
+            915,
+            566
+          ]
+        },
+        "n": {
+          "advance": 658,
+          "bounds": [
+            52,
+            0,
+            606,
+            566
+          ]
+        },
+        "o": {
+          "advance": 664,
+          "bounds": [
+            40,
+            -15,
+            624,
+            565
+          ]
+        },
+        "p": {
+          "advance": 678,
+          "bounds": [
+            52,
+            -170,
+            638,
+            566
+          ]
+        },
+        "q": {
+          "advance": 678,
+          "bounds": [
+            39,
+            -170,
+            623,
+            566
+          ]
+        },
+        "r": {
+          "advance": 396,
+          "bounds": [
+            57,
+            0,
+            396,
+            568
+          ]
+        },
+        "s": {
+          "advance": 540,
+          "bounds": [
+            40,
+            -16,
+            500,
+            566
+          ]
+        },
+        "t": {
+          "advance": 415,
+          "bounds": [
+            57,
+            -8,
+            403,
+            684
+          ]
+        },
+        "u": {
+          "advance": 660,
+          "bounds": [
+            52,
+            -16,
+            608,
+            550
+          ]
+        },
+        "v": {
+          "advance": 585,
+          "bounds": [
+            5,
+            -8,
+            575,
+            550
+          ]
+        },
+        "w": {
+          "advance": 885,
+          "bounds": [
+            5,
+            -8,
+            875,
+            550
+          ]
+        },
+        "x": {
+          "advance": 586,
+          "bounds": [
+            25,
+            -5,
+            579,
+            550
+          ]
+        },
+        "y": {
+          "advance": 583,
+          "bounds": [
+            8,
+            -181,
+            568,
+            550
+          ]
+        },
+        "z": {
+          "advance": 558,
+          "bounds": [
+            30,
+            0,
+            528,
+            550
+          ]
+        },
+        "0": {
+          "advance": 615,
+          "bounds": [
+            27,
+            -16,
+            588,
+            706
+          ]
+        },
+        "1": {
+          "advance": 468,
+          "bounds": [
+            -5,
+            0,
+            378,
+            690
+          ]
+        },
+        "2": {
+          "advance": 615,
+          "bounds": [
+            32,
+            0,
+            565,
+            706
+          ]
+        },
+        "3": {
+          "advance": 615,
+          "bounds": [
+            51,
+            -16,
+            554,
+            706
+          ]
+        },
+        "4": {
+          "advance": 615,
+          "bounds": [
+            8,
+            0,
+            593,
+            698
+          ]
+        },
+        "5": {
+          "advance": 615,
+          "bounds": [
+            59,
+            -16,
+            569,
+            690
+          ]
+        },
+        "6": {
+          "advance": 615,
+          "bounds": [
+            39,
+            -16,
+            580,
+            706
+          ]
+        },
+        "7": {
+          "advance": 615,
+          "bounds": [
+            32,
+            0,
+            573,
+            690
+          ]
+        },
+        "8": {
+          "advance": 615,
+          "bounds": [
+            43,
+            -16,
+            570,
+            706
+          ]
+        },
+        "9": {
+          "advance": 615,
+          "bounds": [
+            34,
+            -16,
+            575,
+            706
+          ]
+        }
+      }
+    }
+  ],
+  "design_targets": [
+    "Rounded bowls with generous internal space",
+    "Asymmetric top-right / bottom-left softened terminals",
+    "Coordinated visual stroke weight across scripts",
+    "Preserve native-script structure and text shaping"
+  ],
+  "provenance_note": "Measurements only. No Cocon outlines or font files are included. Existing Rounded Indic designs are Noto derivatives and cannot be described as drawings from scratch."
+}

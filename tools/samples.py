@@ -1,0 +1,11 @@
+SAMPLES = [
+ {'script':'Kannada','language':'Kannada','lang':'kn','title':'ನಮಸ್ಕಾರ ಕನ್ನಡ','text':'ತಾಜಾ ಹಣ್ಣುಗಳು ಮತ್ತು ತರಕಾರಿಗಳು','clusters':'ಕ ಕಾ ಕಿ ಕೀ ಕು ಕೂ ಕೃ ಕೆ ಕೇ ಕೈ ಕೊ ಕೋ ಕೌ ಕಂ ಕಃ ಕ್ಷ ಜ್ಞ ಶ್ರೀ ಕ್ಕ ಕ್ರ ರ್ಕ'},
+ {'script':'Devanagari','language':'Hindi','lang':'hi','title':'नमस्ते दुनिया','text':'ताज़े फल और सब्ज़ियाँ','clusters':'क का कि की कु कू कृ के कै को कौ कं कः क्ष त्र ज्ञ श्र क्र र्क फ़ ज़ ड़ ढ़'},
+ {'script':'Devanagari','language':'Marathi','lang':'mr','title':'नमस्कार मराठी','text':'ताजी फळे आणि भाज्या','clusters':'ळ ऱ ॲ ऑ ळा ळी ळू ऱ्ह र्‍य क्ष त्र ज्ञ श्री महाराष्ट्र मराठी'},
+ {'script':'Malayalam','language':'Malayalam','lang':'ml','title':'നമസ്കാരം മലയാളം','text':'പുതിയ പഴങ്ങളും പച്ചക്കറികളും','clusters':'ക കാ കി കീ കു കൂ കൃ കെ കേ കൈ കൊ കോ കൗ ക്ക ക്ഷ ന്ത ൺ ൻ ർ ൽ ൾ ൿ'},
+ {'script':'Tamil','language':'Tamil','lang':'ta','title':'வணக்கம் தமிழ்','text':'புதிய பழங்கள் மற்றும் காய்கறிகள்','clusters':'க கா கி கீ கு கூ கெ கே கை கொ கோ கௌ க் ங் ஞ் ண் ன் ற் ழ் ஸ்ரீ க்ஷ'},
+ {'script':'Telugu','language':'Telugu','lang':'te','title':'నమస్కారం తెలుగు','text':'తాజా పండ్లు మరియు కూరగాయలు','clusters':'క కా కి కీ కు కూ కృ కె కే కై కొ కో కౌ కం కః క్క క్ర ర్క క్ష జ్ఞ శ్రీ'},
+ {'script':'Bengali','language':'Bengali','lang':'bn','title':'নমস্কার বাংলা','text':'তাজা ফল ও সবজি','clusters':'ক কা কি কী কু কূ কৃ কে কৈ কো কৌ কং কঃ ক্ষ জ্ঞ ত্র শ্র ক্র র্ক ড় ঢ় য়'},
+]
+
+BLOCKS={'Devanagari':(0x900,0x980),'Bengali':(0x980,0xA00),'Tamil':(0xB80,0xC00),'Telugu':(0xC00,0xC80),'Kannada':(0xC80,0xD00),'Malayalam':(0xD00,0xD80)}

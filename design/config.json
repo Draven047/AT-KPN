@@ -1,0 +1,31 @@
+{
+  "family": "AT-KPN",
+  "version": "0.600",
+  "weights": {
+    "Light": 300,
+    "Regular": 400,
+    "Bold": 700
+  },
+  "source_instances": {
+    "Light": "Regular",
+    "Regular": "SemiBold",
+    "Bold": "ExtraBold"
+  },
+  "native_width_scale": {
+    "Kannada": 0.94,
+    "Devanagari": 0.94,
+    "Malayalam": 0.94,
+    "Tamil": 0.98,
+    "Telugu": 0.98,
+    "Bengali": 1.005
+  },
+  "corner_limit": {
+    "Light": 45,
+    "Regular": 65,
+    "Bold": 85
+  },
+  "license": "SIL OFL 1.1",
+  "approved_direction": "Study 02, approved by user on 2026-11-23",
+  "upstream_commit": "3aa20453e9f86f3f21b17e9a585f9d89181b2c17",
+  "refinement": "Outline audit of 23 November 2026"
+}

@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "date": "2026-11-23",
+  "engine": "Codex in-app browser",
+  "checks": [
+    "All eight language buttons update preview Unicode text and language",
+    "Light/Regular/Bold controls apply 300/400/700",
+    "Text editing, preservation between languages, and reset",
+    "Size slider, Paper/Ink/Lime themes",
+    "Malayalam ss01 alternate",
+    "All four format tabs update individual links",
+    "Individual Kannada Bold OTF downloads and matches the source SHA-256",
+    "Complete family ZIP downloads",
+    "Responsive layout at 521 CSS px content width with no horizontal overflow",
+    "Web CSS copy control succeeds"
+  ],
+  "notes": "Viewport override requested 390px, but runtime reported a 521px content width; narrow layout was checked at that observed width."
+}
