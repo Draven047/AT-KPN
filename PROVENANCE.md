@@ -13,6 +13,8 @@ Selected families: Baloo 2 (Latin and Devanagari), Baloo Tamma 2 (Kannada), Balo
 
 AT-KPN's Light, Regular and Bold are optical adaptations of those instances. Naming, outline edits, proportions, widths, mark placement and shared metrics are encoded in the supplied tools. `sources/editable/` and `sources/layout/` are the reproducible edited sources.
 
-No Noto or Cocon font binaries or outlines are included in release 0.600. Cocon-derived design information in this package is limited to scalar measurements and visual direction. The approved concept image was generated for this project and is included as a design reference, not evidence of font rendering.
+No Noto or Cocon font binaries or outlines are included in release 0.700. Cocon-derived design information in this package is limited to scalar measurements and visual direction. The approved concept image was generated for this project and is included as a design reference, not evidence of font rendering.
 
 The 0.600 refinement retains upstream shaping identifiers while revising selected contour profiles, advances and anchor placement. Malayalam adds one unencoded traditional alternate glyph per weight and the optional ss01 feature.
+
+Release 0.700 adds a fit to the approved concept image: a per-script outline offset (Bold) and smooth per-glyph warps for the letters in the concept, recorded in `design/concept-fit.json` and applied by `tools/fit_concept.py`. Upstream shaping identifiers, glyph names and layout tables are unchanged.

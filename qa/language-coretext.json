@@ -1,7 +1,5 @@
 {
-  "pass": true,
   "engine": "macOS CoreText",
-  "registration_scope": "process only; no system fonts installed",
   "fonts": [
     {
       "cases": [
@@ -3951,5 +3949,7 @@
       "registered": true,
       "resolved_postscript_name": "AT-KPN-Telugu-Regular"
     }
-  ]
+  ],
+  "pass": true,
+  "registration_scope": "process only"
 }

@@ -1,0 +1,56 @@
+{
+  "version": "0.700",
+  "concept_sha256": "acc8feb6d217bfbe10823a0929c215fbc0aed0db1fff0ede69887073b401b5a6",
+  "method": "Each concept word versus the same text in the Bold language font, at the size (within 5% of equal ink height) and whole-pixel position that overlap best; IoU of the binarised shapes.",
+  "rows": [
+    {
+      "language": "English",
+      "text": "Hello",
+      "iou": 0.892,
+      "stroke_font_vs_concept": 0.923
+    },
+    {
+      "language": "Kannada",
+      "text": "ನಮಸ್ಕಾರ",
+      "iou": 0.919,
+      "stroke_font_vs_concept": 1.061
+    },
+    {
+      "language": "Hindi",
+      "text": "नमस्ते",
+      "iou": 0.953,
+      "stroke_font_vs_concept": 1.0
+    },
+    {
+      "language": "Marathi",
+      "text": "नमस्कार",
+      "iou": 0.933,
+      "stroke_font_vs_concept": 1.0
+    },
+    {
+      "language": "Malayalam",
+      "text": "നമസ്കാരം",
+      "iou": 0.906,
+      "stroke_font_vs_concept": 1.0
+    },
+    {
+      "language": "Tamil",
+      "text": "வணக்கம்",
+      "iou": 0.922,
+      "stroke_font_vs_concept": 1.007
+    },
+    {
+      "language": "Telugu",
+      "text": "నమస్కారం",
+      "iou": 0.897,
+      "stroke_font_vs_concept": 1.0
+    },
+    {
+      "language": "Bengali",
+      "text": "নমস্কার",
+      "iou": 0.915,
+      "stroke_font_vs_concept": 1.0
+    }
+  ],
+  "mean_iou": 0.917
+}

@@ -9,6 +9,7 @@ import json
 import subprocess
 import tempfile
 
+import cffsubr
 import ots
 import uharfbuzz as hb
 from fontTools import subset
@@ -38,7 +39,7 @@ def rename(font, language, weight):
     values = {
         1: family + ' Light' if weight == 'Light' else family,
         2: 'Regular' if weight == 'Light' else weight,
-        3: '0.600;ATKP;' + ps,
+        3: CFG['version'] + ';ATKP;' + ps,
         4: family + ' ' + weight,
         6: ps,
         16: family,
@@ -55,9 +56,10 @@ def cff_export(ttf_path, otf_path):
     glyphs = font.getGlyphSet()
     charstrings = {}
     for name in font.getGlyphOrder():
-        # BasePen converts each quadratic to an equivalent cubic; zero rounding
-        # tolerance retains fractional control points in CFF 16.16 precision.
-        pen = T2CharStringPen(font['hmtx'][name][0], glyphs, roundTolerance=0)
+        # BasePen converts each quadratic to an equivalent cubic. Control points
+        # are rounded to whole units (at most 0.5 units, i.e. 1/2000 em), as in
+        # standard CFF fonts; this keeps the OTF downloads within hosting limits.
+        pen = T2CharStringPen(font['hmtx'][name][0], glyphs, roundTolerance=0.5)
         glyphs[name].draw(pen)
         # Preserve individual segments, including upstream backtracking lines.
         # CFF optimization can otherwise collapse those small outline details.
@@ -67,7 +69,7 @@ def cff_export(ttf_path, otf_path):
             del font[tag]
     builder = FontBuilder(font=font)
     builder.setupCFF(font['name'].getDebugName(6), {
-        'version': '0.600',
+        'version': CFG['version'],
         'FullName': font['name'].getDebugName(4),
         'FamilyName': font['name'].getDebugName(16),
         'Weight': font['name'].getDebugName(17),
@@ -80,6 +82,8 @@ def cff_export(ttf_path, otf_path):
     builder.setupMaxp()
     font['post'].formatType = 3.0
     font['head'].indexToLocFormat = 0
+    # Lossless CFF subroutinization keeps downloads within hosting limits.
+    cffsubr.subroutinize(font)
     font.save(otf_path)
 
 
@@ -185,7 +189,7 @@ def export():
                 for name in result.getGlyphOrder():
                     delta = outline_error(commands(original_glyphs, name), commands(out_glyphs, name))
                     max_error = max(max_error, delta)
-                    if delta > 0.02:
+                    if delta > 0.51:
                         errors.append('Outline differs: ' + name)
                     if result['hmtx'][name] != original['hmtx'][name]:
                         errors.append('Metrics differ: ' + name)
@@ -209,8 +213,8 @@ def export():
                           'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
                 reports.append(report)
                 print(report['file'], 'PASS' if report['pass'] else 'FAIL', report['errors'], flush=True)
-    report = {'pass': all(r['pass'] for r in reports), 'version': '0.600', 'files': reports,
-              'scope': '48 language fonts; exact Unicode/metric/shaping preservation, cubic outline geometry within 0.02 units, native alternate retention and OpenType Sanitizer. Native exports include English.'}
+    report = {'pass': all(r['pass'] for r in reports), 'version': CFG['version'], 'files': reports,
+              'scope': '48 language fonts; exact Unicode/metric/shaping preservation, CFF outline geometry within 0.5 units (whole-unit coordinates), native alternate retention and OpenType Sanitizer. Native exports include English.'}
     (ROOT/'qa/language-exports.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n')
     assert report['pass'], 'Language export validation failed; see qa/language-exports.json'
     (ROOT/'LANGUAGE-FONTS.sha256').write_text(''.join(r['sha256']+'  '+r['file']+'\n' for r in reports))

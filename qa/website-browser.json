@@ -1,18 +1,19 @@
 {
   "pass": true,
-  "date": "2026-11-23",
-  "engine": "Codex in-app browser",
+  "date": "2026-11-27",
+  "version": "0.700",
+  "engine": "Claude Code built-in browser (Chromium), local static server of dist/",
+  "design": "Black and white throughout; the hero is only the character animation on black; rewritten copy; page credit 'Designed by AT'",
   "checks": [
-    "All eight language buttons update preview Unicode text and language",
-    "Light/Regular/Bold controls apply 300/400/700",
-    "Text editing, preservation between languages, and reset",
-    "Size slider, Paper/Ink/Lime themes",
-    "Malayalam ss01 alternate",
-    "All four format tabs update individual links",
-    "Individual Kannada Bold OTF downloads and matches the source SHA-256",
-    "Complete family ZIP downloads",
-    "Responsive layout at 521 CSS px content width with no horizontal overflow",
-    "Web CSS copy control succeeds"
-  ],
-  "notes": "Viewport override requested 390px, but runtime reported a 521px content width; narrow layout was checked at that observed width."
+    "All three AT-KPN web font weights load (300/400/700); glyphs.json and catalog.json load; no failed requests",
+    "Hero: only the canvas, a language counter and a pause button; about 1,900 characters at 1440 px and 940 at 375 px; a greeting change takes about 5 s (loosen to dust, then re-form left to right); pause and play work",
+    "Intro: the statement lights up word by word with scrolling; the four figures count up",
+    "Language index: rows invert on hover and cycle weights; rows and footer links open the language in the tester",
+    "Tester: 8 languages, Greeting/Sentence/Letters presets, 3 weights, 3 backgrounds, per-language download link",
+    "Weights: columns wipe in (started by their container) and invert on hover; samples follow the tester text",
+    "Character set, download format switch, FAQ and mobile menu work; the closing panel assembles 'AT-KPN' from characters when scrolled into view",
+    "No colour gradients remain; no mention of other foundries in the page copy; license and credits links still resolve",
+    "Clicking every control raised no script errors; mobile viewport 375 px has no horizontal overflow",
+    "Reduced motion (simulated): character words drawn once at rest, animation paused, nothing hidden, no script errors"
+  ]
 }

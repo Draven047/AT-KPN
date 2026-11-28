@@ -478,8 +478,8 @@
   <head>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
-    <fontRevision value="0.6"/>
-    <checkSumAdjustment value="0x8baa5842"/>
+    <fontRevision value="0.7"/>
+    <checkSumAdjustment value="0x36cf8e37"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001111"/>
     <unitsPerEm value="1000"/>
@@ -797,13 +797,13 @@
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      0.600;ATKP;AT-KPNBengali-Light
+      0.700;ATKP;AT-KPNBengali-Light
     </namerecord>
     <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
       AT-KPN Bengali Light
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 0.600
+      Version 0.700
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       AT-KPNBengali-Light
@@ -839,13 +839,13 @@
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      0.600;ATKP;AT-KPNBengali-Light
+      0.700;ATKP;AT-KPNBengali-Light
     </namerecord>
     <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
       AT-KPN Bengali Light
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 0.600
+      Version 0.700
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
       AT-KPNBengali-Light
@@ -3598,387 +3598,6 @@
           <ValueFormat1 value="0"/>
           <ValueFormat2 value="0"/>
           <ClassDef1>
-            <ClassDef glyph="Ba.bn" class="0"/>
-            <ClassDef glyph="BaBa.bn" class="0"/>
-            <ClassDef glyph="BaBha.bn" class="0"/>
-            <ClassDef glyph="BaDa.bn" class="0"/>
-            <ClassDef glyph="BaDaRa.bn" class="0"/>
-            <ClassDef glyph="BaDda.bn" class="0"/>
-            <ClassDef glyph="BaDdha.bn" class="0"/>
-            <ClassDef glyph="BaDha.bn" class="0"/>
-            <ClassDef glyph="BaHalf.bn" class="0"/>
-            <ClassDef glyph="BaHasant.bn" class="0"/>
-            <ClassDef glyph="BaJa.bn" class="0"/>
-            <ClassDef glyph="BaJha.bn" class="0"/>
-            <ClassDef glyph="BaLa.bn" class="0"/>
-            <ClassDef glyph="BaRa.bn" class="0"/>
-            <ClassDef glyph="Bha.bn" class="0"/>
-            <ClassDef glyph="BhaHalf.bn" class="0"/>
-            <ClassDef glyph="BhaHasant.bn" class="0"/>
-            <ClassDef glyph="BhaLa.bn" class="0"/>
-            <ClassDef glyph="BhaRa.bn" class="0"/>
-            <ClassDef glyph="Ca.bn" class="0"/>
-            <ClassDef glyph="CaBa.bn" class="0"/>
-            <ClassDef glyph="CaCa.bn" class="0"/>
-            <ClassDef glyph="CaCha.bn" class="0"/>
-            <ClassDef glyph="CaChaBa.bn" class="0"/>
-            <ClassDef glyph="CaChaRa.bn" class="0"/>
-            <ClassDef glyph="CaHalf.bn" class="0"/>
-            <ClassDef glyph="CaHasant.bn" class="0"/>
-            <ClassDef glyph="CaNa.bn" class="0"/>
-            <ClassDef glyph="CaNya.bn" class="0"/>
-            <ClassDef glyph="CaRa.bn" class="0"/>
-            <ClassDef glyph="Cha.bn" class="0"/>
-            <ClassDef glyph="ChaBa.bn" class="0"/>
-            <ClassDef glyph="ChaHalf.bn" class="0"/>
-            <ClassDef glyph="ChaHasant.bn" class="0"/>
-            <ClassDef glyph="ChaRa.bn" class="0"/>
-            <ClassDef glyph="Da.bn" class="0"/>
-            <ClassDef glyph="DaBa.bn" class="0"/>
-            <ClassDef glyph="DaBha.bn" class="0"/>
-            <ClassDef glyph="DaBhaRa.bn" class="0"/>
-            <ClassDef glyph="DaDa.bn" class="0"/>
-            <ClassDef glyph="DaDaBa.bn" class="0"/>
-            <ClassDef glyph="DaDaRa.bn" class="0"/>
-            <ClassDef glyph="DaDha.bn" class="0"/>
-            <ClassDef glyph="DaDhaBa.bn" class="0"/>
-            <ClassDef glyph="DaGa.bn" class="0"/>
-            <ClassDef glyph="DaGha.bn" class="0"/>
-            <ClassDef glyph="DaHalf.bn" class="0"/>
-            <ClassDef glyph="DaHasant.bn" class="0"/>
-            <ClassDef glyph="DaMa.bn" class="0"/>
-            <ClassDef glyph="DaNa.bn" class="0"/>
-            <ClassDef glyph="DaRa.bn" class="0"/>
-            <ClassDef glyph="Dda.bn" class="0"/>
-            <ClassDef glyph="DdaBa.bn" class="0"/>
-            <ClassDef glyph="DdaDda.bn" class="0"/>
-            <ClassDef glyph="DdaGa.bn" class="0"/>
-            <ClassDef glyph="DdaHalf.bn" class="0"/>
-            <ClassDef glyph="DdaHasant.bn" class="0"/>
-            <ClassDef glyph="DdaMa.bn" class="0"/>
-            <ClassDef glyph="DdaRa.bn" class="0"/>
-            <ClassDef glyph="Ddha.bn" class="0"/>
-            <ClassDef glyph="DdhaHalf.bn" class="0"/>
-            <ClassDef glyph="DdhaHasant.bn" class="0"/>
-            <ClassDef glyph="DdhaRa.bn" class="0"/>
-            <ClassDef glyph="Dha.bn" class="0"/>
-            <ClassDef glyph="DhaBa.bn" class="0"/>
-            <ClassDef glyph="DhaHalf.bn" class="0"/>
-            <ClassDef glyph="DhaHasant.bn" class="0"/>
-            <ClassDef glyph="DhaMa.bn" class="0"/>
-            <ClassDef glyph="DhaNa.bn" class="0"/>
-            <ClassDef glyph="DhaRa.bn" class="0"/>
-            <ClassDef glyph="Ga.bn" class="0"/>
-            <ClassDef glyph="GaBa.bn" class="0"/>
-            <ClassDef glyph="GaDa.bn" class="0"/>
-            <ClassDef glyph="GaDha.bn" class="0"/>
-            <ClassDef glyph="GaDhaBa.bn" class="0"/>
-            <ClassDef glyph="GaDhaRa.bn" class="0"/>
-            <ClassDef glyph="GaGa.bn" class="0"/>
-            <ClassDef glyph="GaHalf.bn" class="0"/>
-            <ClassDef glyph="GaHasant.bn" class="0"/>
-            <ClassDef glyph="GaLa.bn" class="0"/>
-            <ClassDef glyph="GaMa.bn" class="0"/>
-            <ClassDef glyph="GaNa.bn" class="0"/>
-            <ClassDef glyph="GaNna.bn" class="0"/>
-            <ClassDef glyph="GaRa.bn" class="0"/>
-            <ClassDef glyph="Gha.bn" class="0"/>
-            <ClassDef glyph="GhaBa.bn" class="0"/>
-            <ClassDef glyph="GhaHalf.bn" class="0"/>
-            <ClassDef glyph="GhaHasant.bn" class="0"/>
-            <ClassDef glyph="GhaNa.bn" class="0"/>
-            <ClassDef glyph="GhaRa.bn" class="0"/>
-            <ClassDef glyph="Ha.bn" class="0"/>
-            <ClassDef glyph="HaBa.bn" class="0"/>
-            <ClassDef glyph="HaHalf.bn" class="0"/>
-            <ClassDef glyph="HaHasant.bn" class="0"/>
-            <ClassDef glyph="HaLa.bn" class="0"/>
-            <ClassDef glyph="HaMa.bn" class="0"/>
-            <ClassDef glyph="HaNa.bn" class="0"/>
-            <ClassDef glyph="HaNna.bn" class="0"/>
-            <ClassDef glyph="HaRa.bn" class="0"/>
-            <ClassDef glyph="HaSignRu.bn" class="0"/>
-            <ClassDef glyph="HaSignU.bn" class="0"/>
-            <ClassDef glyph="Ja.bn" class="0"/>
-            <ClassDef glyph="JaBa.bn" class="0"/>
-            <ClassDef glyph="JaHalf.bn" class="0"/>
-            <ClassDef glyph="JaHasant.bn" class="0"/>
-            <ClassDef glyph="JaJa.bn" class="0"/>
-            <ClassDef glyph="JaJaBa.bn" class="0"/>
-            <ClassDef glyph="JaJha.bn" class="0"/>
-            <ClassDef glyph="JaNya.bn" class="0"/>
-            <ClassDef glyph="JaRa.bn" class="0"/>
-            <ClassDef glyph="Jha.bn" class="0"/>
-            <ClassDef glyph="JhaHalf.bn" class="0"/>
-            <ClassDef glyph="JhaHasant.bn" class="0"/>
-            <ClassDef glyph="JhaRa.bn" class="0"/>
-            <ClassDef glyph="Ka.bn" class="0"/>
-            <ClassDef glyph="KaBa.bn" class="0"/>
-            <ClassDef glyph="KaHalf.bn" class="0"/>
-            <ClassDef glyph="KaHasant.bn" class="0"/>
-            <ClassDef glyph="KaKa.bn" class="0"/>
-            <ClassDef glyph="KaLa.bn" class="0"/>
-            <ClassDef glyph="KaMa.bn" class="0"/>
-            <ClassDef glyph="KaNa.bn" class="0"/>
-            <ClassDef glyph="KaRa.bn" class="0"/>
-            <ClassDef glyph="KaSa.bn" class="0"/>
-            <ClassDef glyph="KaSsa.bn" class="0"/>
-            <ClassDef glyph="KaSsaBa.bn" class="0"/>
-            <ClassDef glyph="KaSsaHalf.bn" class="0"/>
-            <ClassDef glyph="KaSsaHasant.bn" class="0"/>
-            <ClassDef glyph="KaSsaMa.bn" class="0"/>
-            <ClassDef glyph="KaSsaNna.bn" class="0"/>
-            <ClassDef glyph="KaSsaRa.bn" class="0"/>
-            <ClassDef glyph="KaTa.bn" class="0"/>
-            <ClassDef glyph="KaTaBa.bn" class="0"/>
-            <ClassDef glyph="KaTaRa.bn" class="0"/>
-            <ClassDef glyph="KaTta.bn" class="0"/>
-            <ClassDef glyph="KaTtaRa.bn" class="0"/>
-            <ClassDef glyph="Kha.bn" class="0"/>
-            <ClassDef glyph="KhaBa.bn" class="0"/>
-            <ClassDef glyph="KhaHalf.bn" class="0"/>
-            <ClassDef glyph="KhaHasant.bn" class="0"/>
-            <ClassDef glyph="KhaRa.bn" class="0"/>
-            <ClassDef glyph="La.bn" class="0"/>
-            <ClassDef glyph="LaBa.bn" class="0"/>
-            <ClassDef glyph="LaDa.bn" class="0"/>
-            <ClassDef glyph="LaDda.bn" class="0"/>
-            <ClassDef glyph="LaDdaRa.bn" class="0"/>
-            <ClassDef glyph="LaDdha.bn" class="0"/>
-            <ClassDef glyph="LaDha.bn" class="0"/>
-            <ClassDef glyph="LaGa.bn" class="0"/>
-            <ClassDef glyph="LaGaSignU.bn" class="0"/>
-            <ClassDef glyph="LaGha.bn" class="0"/>
-            <ClassDef glyph="LaHalf.bn" class="0"/>
-            <ClassDef glyph="LaHasant.bn" class="0"/>
-            <ClassDef glyph="LaKa.bn" class="0"/>
-            <ClassDef glyph="LaLa.bn" class="0"/>
-            <ClassDef glyph="LaMa.bn" class="0"/>
-            <ClassDef glyph="LaPa.bn" class="0"/>
-            <ClassDef glyph="LaPha.bn" class="0"/>
-            <ClassDef glyph="LaPhaRa.bn" class="0"/>
-            <ClassDef glyph="LaRa.bn" class="0"/>
-            <ClassDef glyph="LaTta.bn" class="0"/>
-            <ClassDef glyph="LaTtaRa.bn" class="0"/>
-            <ClassDef glyph="Ma.bn" class="0"/>
-            <ClassDef glyph="MaBa.bn" class="0"/>
-            <ClassDef glyph="MaBaRa.bn" class="0"/>
-            <ClassDef glyph="MaBha.bn" class="0"/>
-            <ClassDef glyph="MaBhaRa.bn" class="0"/>
-            <ClassDef glyph="MaDa.bn" class="0"/>
-            <ClassDef glyph="MaHasant.bn" class="0"/>
-            <ClassDef glyph="MaLa.bn" class="0"/>
-            <ClassDef glyph="MaMa.bn" class="0"/>
-            <ClassDef glyph="MaNa.bn" class="0"/>
-            <ClassDef glyph="MaPa.bn" class="0"/>
-            <ClassDef glyph="MaPaRa.bn" class="0"/>
-            <ClassDef glyph="MaPha.bn" class="0"/>
-            <ClassDef glyph="MaPhaRa.bn" class="0"/>
-            <ClassDef glyph="MaRa.bn" class="0"/>
-            <ClassDef glyph="MaTa.bn" class="0"/>
-            <ClassDef glyph="Na.bn" class="0"/>
-            <ClassDef glyph="NaBa.bn" class="0"/>
-            <ClassDef glyph="NaDa.bn" class="0"/>
-            <ClassDef glyph="NaDaBa.bn" class="0"/>
-            <ClassDef glyph="NaDaRa.bn" class="0"/>
-            <ClassDef glyph="NaDda.bn" class="0"/>
-            <ClassDef glyph="NaDdaRa.bn" class="0"/>
-            <ClassDef glyph="NaDha.bn" class="0"/>
-            <ClassDef glyph="NaDhaBa.bn" class="0"/>
-            <ClassDef glyph="NaDhaRa.bn" class="0"/>
-            <ClassDef glyph="NaHalf.bn" class="0"/>
-            <ClassDef glyph="NaHasant.bn" class="0"/>
-            <ClassDef glyph="NaMa.bn" class="0"/>
-            <ClassDef glyph="NaNa.bn" class="0"/>
-            <ClassDef glyph="NaRa.bn" class="0"/>
-            <ClassDef glyph="NaSa.bn" class="0"/>
-            <ClassDef glyph="NaSaTta.bn" class="0"/>
-            <ClassDef glyph="NaTa.bn" class="0"/>
-            <ClassDef glyph="NaTaBa.bn" class="0"/>
-            <ClassDef glyph="NaTaRa.bn" class="0"/>
-            <ClassDef glyph="NaTaSignU.bn" class="0"/>
-            <ClassDef glyph="NaTha.bn" class="0"/>
-            <ClassDef glyph="NaThaRa.bn" class="0"/>
-            <ClassDef glyph="NaTta.bn" class="0"/>
-            <ClassDef glyph="NaTtaRa.bn" class="0"/>
-            <ClassDef glyph="NaTtha.bn" class="0"/>
-            <ClassDef glyph="NaTthaSignIi.bn" class="0"/>
-            <ClassDef glyph="NgaGa.bn" class="0"/>
-            <ClassDef glyph="NgaGha.bn" class="0"/>
-            <ClassDef glyph="NgaGhaRa.bn" class="0"/>
-            <ClassDef glyph="NgaHalf.bn" class="0"/>
-            <ClassDef glyph="NgaKa.bn" class="0"/>
-            <ClassDef glyph="NgaKaRa.bn" class="0"/>
-            <ClassDef glyph="NgaKaSsa.bn" class="0"/>
-            <ClassDef glyph="NgaKaSsaRa.bn" class="0"/>
-            <ClassDef glyph="NgaKha.bn" class="0"/>
-            <ClassDef glyph="NgaMa.bn" class="0"/>
-            <ClassDef glyph="Nna.bn" class="0"/>
-            <ClassDef glyph="NnaBa.bn" class="0"/>
-            <ClassDef glyph="NnaDdha.bn" class="0"/>
-            <ClassDef glyph="NnaDdhaRa.bn" class="0"/>
-            <ClassDef glyph="NnaHalf.bn" class="0"/>
-            <ClassDef glyph="NnaHasant.bn" class="0"/>
-            <ClassDef glyph="NnaMa.bn" class="0"/>
-            <ClassDef glyph="NnaNa.bn" class="0"/>
-            <ClassDef glyph="NnaNna.bn" class="0"/>
-            <ClassDef glyph="NnaRa.bn" class="0"/>
-            <ClassDef glyph="NnaTta.bn" class="0"/>
-            <ClassDef glyph="NnaTtaRa.bn" class="0"/>
-            <ClassDef glyph="NnaTtha.bn" class="0"/>
-            <ClassDef glyph="NnaTthaRa.bn" class="0"/>
-            <ClassDef glyph="NnaTthaRaSignIi.bn" class="0"/>
-            <ClassDef glyph="NnaTthaSignIi.bn" class="0"/>
-            <ClassDef glyph="Pa.bn" class="0"/>
-            <ClassDef glyph="PaHalf.bn" class="0"/>
-            <ClassDef glyph="PaHasant.bn" class="0"/>
-            <ClassDef glyph="PaLa.bn" class="0"/>
-            <ClassDef glyph="PaMa.bn" class="0"/>
-            <ClassDef glyph="PaNa.bn" class="0"/>
-            <ClassDef glyph="PaPa.bn" class="0"/>
-            <ClassDef glyph="PaRa.bn" class="0"/>
-            <ClassDef glyph="PaSa.bn" class="0"/>
-            <ClassDef glyph="PaTa.bn" class="0"/>
-            <ClassDef glyph="PaTaRa.bn" class="0"/>
-            <ClassDef glyph="PaTaSignU.bn" class="0"/>
-            <ClassDef glyph="PaTta.bn" class="0"/>
-            <ClassDef glyph="Pha.bn" class="0"/>
-            <ClassDef glyph="PhaHalf.bn" class="0"/>
-            <ClassDef glyph="PhaHasant.bn" class="0"/>
-            <ClassDef glyph="PhaLa.bn" class="0"/>
-            <ClassDef glyph="PhaRa.bn" class="0"/>
-            <ClassDef glyph="PhaTta.bn" class="0"/>
-            <ClassDef glyph="Ra.as" class="0"/>
-            <ClassDef glyph="Ra.bn" class="0"/>
-            <ClassDef glyph="RaHasant.as" class="0"/>
-            <ClassDef glyph="RaHasant.bn" class="0"/>
-            <ClassDef glyph="Rha.bn" class="0"/>
-            <ClassDef glyph="RhaHalf.bn" class="0"/>
-            <ClassDef glyph="RhaHasant.bn" class="0"/>
-            <ClassDef glyph="RhaRa.bn" class="0"/>
-            <ClassDef glyph="Rha_for_ukar.bn" class="0"/>
-            <ClassDef glyph="Rra.bn" class="0"/>
-            <ClassDef glyph="RraGa.bn" class="0"/>
-            <ClassDef glyph="RraHalf.bn" class="0"/>
-            <ClassDef glyph="RraHasant.bn" class="0"/>
-            <ClassDef glyph="RraRa.bn" class="0"/>
-            <ClassDef glyph="Rra_for_ukar.bn" class="0"/>
-            <ClassDef glyph="Sa.bn" class="0"/>
-            <ClassDef glyph="SaBa.bn" class="0"/>
-            <ClassDef glyph="SaHasant.bn" class="0"/>
-            <ClassDef glyph="SaKa.bn" class="0"/>
-            <ClassDef glyph="SaKaRa.bn" class="0"/>
-            <ClassDef glyph="SaKha.bn" class="0"/>
-            <ClassDef glyph="SaLa.bn" class="0"/>
-            <ClassDef glyph="SaMa.bn" class="0"/>
-            <ClassDef glyph="SaNa.bn" class="0"/>
-            <ClassDef glyph="SaPa.bn" class="0"/>
-            <ClassDef glyph="SaPaLa.bn" class="0"/>
-            <ClassDef glyph="SaPaRa.bn" class="0"/>
-            <ClassDef glyph="SaPha.bn" class="0"/>
-            <ClassDef glyph="SaRa.bn" class="0"/>
-            <ClassDef glyph="SaTa.bn" class="0"/>
-            <ClassDef glyph="SaTaBa.bn" class="0"/>
-            <ClassDef glyph="SaTaRa.bn" class="0"/>
-            <ClassDef glyph="SaTaSignU.bn" class="0"/>
-            <ClassDef glyph="SaTha.bn" class="0"/>
-            <ClassDef glyph="SaTta.bn" class="0"/>
-            <ClassDef glyph="SaTtaRa.bn" class="0"/>
-            <ClassDef glyph="Sha.bn" class="0"/>
-            <ClassDef glyph="ShaBa.bn" class="0"/>
-            <ClassDef glyph="ShaCa.bn" class="0"/>
-            <ClassDef glyph="ShaCha.bn" class="0"/>
-            <ClassDef glyph="ShaHalf.bn" class="0"/>
-            <ClassDef glyph="ShaHasant.bn" class="0"/>
-            <ClassDef glyph="ShaLa.bn" class="0"/>
-            <ClassDef glyph="ShaMa.bn" class="0"/>
-            <ClassDef glyph="ShaNa.bn" class="0"/>
-            <ClassDef glyph="ShaRa.bn" class="0"/>
-            <ClassDef glyph="ShaRaSignIi.bn" class="0"/>
-            <ClassDef glyph="ShaTa.bn" class="0"/>
-            <ClassDef glyph="SignAa.bn" class="0"/>
-            <ClassDef glyph="SignAi.bn" class="0"/>
-            <ClassDef glyph="SignAu.bn" class="0"/>
-            <ClassDef glyph="SignAuMark.bn" class="0"/>
-            <ClassDef glyph="SignE.bn" class="0"/>
-            <ClassDef glyph="SignIi.bn" class="0"/>
-            <ClassDef glyph="SignIiReph.bn" class="0"/>
-            <ClassDef glyph="SignIi_Tta1.bn" class="0"/>
-            <ClassDef glyph="SignIi_Tta1_Reph.bn" class="0"/>
-            <ClassDef glyph="SignIi_Tta2.bn" class="0"/>
-            <ClassDef glyph="SignIi_Tta2_Reph.bn" class="0"/>
-            <ClassDef glyph="SignO.bn" class="0"/>
-            <ClassDef glyph="SignU.side.bn" class="0"/>
-            <ClassDef glyph="SignUu.side.bn" class="0"/>
-            <ClassDef glyph="Ssa.bn" class="0"/>
-            <ClassDef glyph="SsaBa.bn" class="0"/>
-            <ClassDef glyph="SsaHalf.bn" class="0"/>
-            <ClassDef glyph="SsaHasant.bn" class="0"/>
-            <ClassDef glyph="SsaKa.bn" class="0"/>
-            <ClassDef glyph="SsaKaRa.bn" class="0"/>
-            <ClassDef glyph="SsaMa.bn" class="0"/>
-            <ClassDef glyph="SsaPa.bn" class="0"/>
-            <ClassDef glyph="SsaPaRa.bn" class="0"/>
-            <ClassDef glyph="SsaPha.bn" class="0"/>
-            <ClassDef glyph="SsaRa.bn" class="0"/>
-            <ClassDef glyph="SsaTta.bn" class="0"/>
-            <ClassDef glyph="SsaTtaRa.bn" class="0"/>
-            <ClassDef glyph="SsaTtha.bn" class="0"/>
-            <ClassDef glyph="SsaTthaSignIi.bn" class="0"/>
-            <ClassDef glyph="Ta.bn" class="0"/>
-            <ClassDef glyph="TaBa.bn" class="0"/>
-            <ClassDef glyph="TaHalf.bn" class="0"/>
-            <ClassDef glyph="TaHasant.bn" class="0"/>
-            <ClassDef glyph="TaLa.bn" class="0"/>
-            <ClassDef glyph="TaMa.bn" class="0"/>
-            <ClassDef glyph="TaNa.bn" class="0"/>
-            <ClassDef glyph="TaRa.bn" class="0"/>
-            <ClassDef glyph="TaTa.bn" class="0"/>
-            <ClassDef glyph="TaTaBa.bn" class="0"/>
-            <ClassDef glyph="TaTaRa.bn" class="0"/>
-            <ClassDef glyph="TaTha.bn" class="0"/>
-            <ClassDef glyph="Tha.bn" class="0"/>
-            <ClassDef glyph="ThaBa.bn" class="0"/>
-            <ClassDef glyph="ThaHalf.bn" class="0"/>
-            <ClassDef glyph="ThaHasant.bn" class="0"/>
-            <ClassDef glyph="ThaRa.bn" class="0"/>
-            <ClassDef glyph="Tta.bn" class="0"/>
-            <ClassDef glyph="TtaBa.bn" class="0"/>
-            <ClassDef glyph="TtaHalf.bn" class="0"/>
-            <ClassDef glyph="TtaHasant.bn" class="0"/>
-            <ClassDef glyph="TtaMa.bn" class="0"/>
-            <ClassDef glyph="TtaRa.bn" class="0"/>
-            <ClassDef glyph="TtaSignI.bn" class="0"/>
-            <ClassDef glyph="TtaSignIReph.bn" class="0"/>
-            <ClassDef glyph="TtaTta.bn" class="0"/>
-            <ClassDef glyph="TtaTtaRa.bn" class="0"/>
-            <ClassDef glyph="Ttha.bn" class="0"/>
-            <ClassDef glyph="TthaHalf.bn" class="0"/>
-            <ClassDef glyph="TthaHasant.bn" class="0"/>
-            <ClassDef glyph="TthaRa.bn" class="0"/>
-            <ClassDef glyph="TthaRaSignIi.bn" class="0"/>
-            <ClassDef glyph="TthaSignI.bn" class="0"/>
-            <ClassDef glyph="TthaSignIReph.bn" class="0"/>
-            <ClassDef glyph="TthaSignIi.bn" class="0"/>
-            <ClassDef glyph="TthaSignIiReph.bn" class="0"/>
-            <ClassDef glyph="VowelA.bn" class="0"/>
-            <ClassDef glyph="VowelAa.bn" class="0"/>
-            <ClassDef glyph="VowelI.bn" class="0"/>
-            <ClassDef glyph="VowelIi.bn" class="0"/>
-            <ClassDef glyph="VowelU.bn" class="0"/>
-            <ClassDef glyph="VowelUu.bn" class="0"/>
-            <ClassDef glyph="Wa.as" class="0"/>
-            <ClassDef glyph="WaHalf.as" class="0"/>
-            <ClassDef glyph="WaHasant.as" class="0"/>
-            <ClassDef glyph="WaRa.as" class="0"/>
-            <ClassDef glyph="Ya.bn" class="0"/>
-            <ClassDef glyph="YaHalf.bn" class="0"/>
-            <ClassDef glyph="YaHasant.bn" class="0"/>
-            <ClassDef glyph="Yaphala.bn" class="0"/>
-            <ClassDef glyph="Yya.bn" class="0"/>
-            <ClassDef glyph="YyaHalf.bn" class="0"/>
-            <ClassDef glyph="YyaHasant.bn" class="0"/>
-            <ClassDef glyph="YyaRa.bn" class="0"/>
           </ClassDef1>
           <ClassDef2>
             <ClassDef glyph="Ba.bn" class="1"/>
@@ -4346,19 +3965,14 @@
           <!-- Class2Count=5 -->
           <Class1Record index="0">
             <Class2Record index="0">
-              <Value1 XAdvance="0"/>
             </Class2Record>
             <Class2Record index="1">
-              <Value1 XAdvance="0"/>
             </Class2Record>
             <Class2Record index="2">
-              <Value1 XAdvance="0"/>
             </Class2Record>
             <Class2Record index="3">
-              <Value1 XAdvance="0"/>
             </Class2Record>
             <Class2Record index="4">
-              <Value1 XAdvance="0"/>
             </Class2Record>
           </Class1Record>
         </PairPos>

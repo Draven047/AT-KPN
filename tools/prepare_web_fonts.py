@@ -2,10 +2,11 @@
 from pathlib import Path
 import hashlib, json
 from fontTools.ttLib import TTFont
-from export_language_fonts import cff_export
+from export_language_fonts import cff_export, commands, outline_error
 
 ROOT = Path(__file__).resolve().parents[1]
 reports = []
+combined = []
 inputs = [(p.parent.name, p) for p in sorted((ROOT/'TTF').glob('*/*.ttf'))]
 inputs += [('All-languages', p) for p in sorted((ROOT/'desktop').glob('*.ttf'))]
 for language, path in inputs:
@@ -28,6 +29,11 @@ for language, path in inputs:
         assert result.sfntVersion == 'OTTO' and 'CFF ' in result
         for tag in ['hmtx', 'GSUB', 'GPOS', 'GDEF']:
             assert original[tag].compile(original) == result[tag].compile(result)
+        a, b = original.getGlyphSet(), result.getGlyphSet()
+        error = max(outline_error(commands(a, n), commands(b, n)) for n in original.getGlyphOrder())
+        assert error < 0.51, (path, error)
+        combined.append({'file':str(path.with_suffix('.otf').relative_to(ROOT)), 'pass':True, 'max_control_point_error':error, 'sha256':hashlib.sha256(path.with_suffix('.otf').read_bytes()).hexdigest()})
         reports.append({'file':str(path.with_suffix('.otf').relative_to(ROOT)), 'pass':True, 'sha256':hashlib.sha256(path.with_suffix('.otf').read_bytes()).hexdigest()})
 (ROOT/'qa/web-exports.json').write_text(json.dumps({'pass':True,'files':reports,'scope':'WOFF and WOFF2 lossless outline and layout comparison; combined OTF CFF format and layout preservation.'},indent=2)+'\n')
+(ROOT/'qa/combined-otf.json').write_text(json.dumps({'pass':True,'fonts':combined},indent=2)+'\n')
 print('Prepared and checked',len(reports),'additional font files.')

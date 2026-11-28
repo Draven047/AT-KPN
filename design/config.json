@@ -1,6 +1,6 @@
 {
   "family": "AT-KPN",
-  "version": "0.600",
+  "version": "0.700",
   "weights": {
     "Light": 300,
     "Regular": 400,
@@ -27,5 +27,5 @@
   "license": "SIL OFL 1.1",
   "approved_direction": "Study 02, approved by user on 2026-11-23",
   "upstream_commit": "3aa20453e9f86f3f21b17e9a585f9d89181b2c17",
-  "refinement": "Outline audit of 23 November 2026"
+  "refinement": "Outline audit of 23 November 2026; concept fit of 24 November 2026 (tools/fit_concept.py, design/concept-fit.json)"
 }

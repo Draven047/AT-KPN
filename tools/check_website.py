@@ -53,7 +53,12 @@ for href in parser.links:
 for path in DIST.glob('*.css'):
     for url in re.findall(r"url\(['\"]?([^)'\"]+)",path.read_text()):
         assert (DIST/url).is_file(),(path,url)
+glyphs=json.loads((DIST/'glyphs.json').read_text())
+assert [s['id'] for s in glyphs['scripts']]==['Latin','Kannada','Devanagari','Malayalam','Tamil','Telugu','Bengali']
+glyph_count=sum(len(g['chars']) for s in glyphs['scripts'] for g in s['groups'])
+assert all(g['chars'] for s in glyphs['scripts'] for g in s['groups']) and glyph_count>350
+assert all(len(ch)==1 and name for s in glyphs['scripts'] for g in s['groups'] for ch,name in g['chars'])
 assert all(p.stat().st_size<25*1024*1024 for p in DIST.rglob('*') if p.is_file()),'Asset exceeds static hosting file limit'
-report={'pass':True,'font_downloads':len(files),'zip_bundles':len(bundles),'scope':'All catalog hashes, font magic signatures, ZIP CRC/content/license/CSS dependencies, complete family contents and internal page links verified.'}
+report={'pass':True,'font_downloads':len(files),'zip_bundles':len(bundles),'explorer_characters':glyph_count,'scope':'All catalog hashes, font magic signatures, ZIP CRC/content/license/CSS dependencies, complete family contents, glyph explorer data and internal page links verified.'}
 (ROOT/'qa/website-assets.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

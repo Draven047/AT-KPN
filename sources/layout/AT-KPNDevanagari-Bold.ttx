@@ -824,8 +824,8 @@
   <head>
     <!-- Most of this table will be recalculated by the compiler -->
     <tableVersion value="1.0"/>
-    <fontRevision value="0.6"/>
-    <checkSumAdjustment value="0x6aca0b8f"/>
+    <fontRevision value="0.7"/>
+    <checkSumAdjustment value="0xf65734ae"/>
     <magicNumber value="0x5f0f3cf5"/>
     <flags value="00000000 00001111"/>
     <unitsPerEm value="1000"/>
@@ -1221,13 +1221,13 @@
       Bold
     </namerecord>
     <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      0.600;ATKP;AT-KPNDevanagari-Bold
+      0.700;ATKP;AT-KPNDevanagari-Bold
     </namerecord>
     <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
       AT-KPN Devanagari Bold
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 0.600
+      Version 0.700
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       AT-KPNDevanagari-Bold
@@ -1263,13 +1263,13 @@
       Bold
     </namerecord>
     <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      0.600;ATKP;AT-KPNDevanagari-Bold
+      0.700;ATKP;AT-KPNDevanagari-Bold
     </namerecord>
     <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
       AT-KPN Devanagari Bold
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 0.600
+      Version 0.700
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
       AT-KPNDevanagari-Bold
@@ -45429,17 +45429,13 @@
               <ClassDef glyph="uni097F" class="3"/>
               <ClassDef glyph="vowelA.dv" class="3"/>
               <ClassDef glyph="vowelAa.dv" class="3"/>
-              <ClassDef glyph="vowelAi.dv" class="0"/>
               <ClassDef glyph="vowelAu.dv" class="3"/>
               <ClassDef glyph="vowelChandraA.dv" class="3"/>
-              <ClassDef glyph="vowelChandraE.dv" class="0"/>
               <ClassDef glyph="vowelChandraO.dv" class="3"/>
-              <ClassDef glyph="vowelE.dv" class="0"/>
               <ClassDef glyph="vowelI.dv" class="1"/>
               <ClassDef glyph="vowelIi.dv" class="1"/>
               <ClassDef glyph="vowelO.dv" class="3"/>
               <ClassDef glyph="vowelShortA.dv" class="3"/>
-              <ClassDef glyph="vowelShortE.dv" class="0"/>
               <ClassDef glyph="vowelShortO.dv" class="3"/>
               <ClassDef glyph="vowelUu.dv" class="10"/>
             </ClassDef1>

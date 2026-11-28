@@ -1,4 +1,4 @@
-"""AT-KPN 0.600. Editable Baloo-derived outlines with retained OpenType layout.
+"""AT-KPN. Editable Baloo-derived outlines with retained OpenType layout.
 
 Cocon is used only through scalar design measurements. No Cocon font software
 or outline data is read by this builder. The approved concept guides the cuts.
@@ -122,13 +122,13 @@ def names(tt,weight,script=None):
     family='AT-KPN'+(' '+script if script else '')
     ps='AT-KPN'+(script or '')+'-'+weight
     tt['name'].names=[]
-    values={0:COPYRIGHT,1:family+' Light' if weight=='Light' else family,2:'Regular' if weight=='Light' else weight,3:f'0.600;ATKP;{ps}',4:family+' '+weight,5:'Version 0.600',6:ps,8:'AT-KPN Project',9:'AT-KPN Project; upstream Baloo design by Ek Type',10:'Compact Latin and Indic family, adapted from Baloo 2 with original Latin drawings and asymmetric stroke ends. Approved Study 02 direction.',13:'This Font Software is licensed under the SIL Open Font License, Version 1.1.',14:'https://openfontlicense.org/open-font-license-official-text/',16:family,17:weight}
+    values={0:COPYRIGHT,1:family+' Light' if weight=='Light' else family,2:'Regular' if weight=='Light' else weight,3:f'{CFG["version"]};ATKP;{ps}',4:family+' '+weight,5:f'Version {CFG["version"]}',6:ps,8:'AT-KPN Project',9:'AT-KPN Project; upstream Baloo design by Ek Type',10:'Compact Latin and Indic family, adapted from Baloo 2 with original Latin drawings and asymmetric stroke ends. Approved Study 02 direction.',13:'This Font Software is licensed under the SIL Open Font License, Version 1.1.',14:'https://openfontlicense.org/open-font-license-official-text/',16:family,17:weight}
     for nid,value in values.items():
         tt['name'].setName(value,nid,3,1,0x409)
         tt['name'].setName(value,nid,1,0,0)
-    os=tt['OS/2'];os.version=max(4,os.version);os.usWeightClass=CFG['weights'][weight];os.usWidthClass=5;os.fsType=0;os.achVendID='ATKP';os.sxHeight=550;os.sCapHeight=710
+    os=tt['OS/2'];os.version=max(4,os.version);os.usWeightClass=CFG['weights'][weight];os.usWidthClass=5;os.fsType=0;os.achVendID='ATKP';os.sxHeight=550;os.sCapHeight=690
     os.fsSelection=(1<<7)|((1<<5) if weight=='Bold' else (1<<6))
-    tt['head'].macStyle=1 if weight=='Bold' else 0;tt['head'].fontRevision=.6
+    tt['head'].macStyle=1 if weight=='Bold' else 0;tt['head'].fontRevision=float(CFG['version'])
     tt.recalcTimestamp=False;tt['head'].created=tt['head'].modified=3878236800
     for tag in ('DSIG','STAT','fpgm','prep','cvt ','gasp','LTSH','hdmx'):
         if tag in tt:del tt[tag]
@@ -154,7 +154,7 @@ def subset_component(tt,script):
     return tt
 
 def export_editable(tt,script,weight):
-    base=f'AT-KPN{script}-{weight}';u=UFO();u.info.familyName='AT-KPN '+script;u.info.styleName=weight;u.info.unitsPerEm=1000;u.info.ascender=1100;u.info.descender=-500;u.info.xHeight=550;u.info.capHeight=710;u.info.copyright=COPYRIGHT;u.info.openTypeNameLicense='SIL Open Font License 1.1';u.info.openTypeOS2WeightClass=CFG['weights'][weight];u.info.versionMajor=0;u.info.versionMinor=600
+    base=f'AT-KPN{script}-{weight}';u=UFO();u.info.familyName='AT-KPN '+script;u.info.styleName=weight;u.info.unitsPerEm=1000;u.info.ascender=1100;u.info.descender=-500;u.info.xHeight=550;u.info.capHeight=690;u.info.copyright=COPYRIGHT;u.info.openTypeNameLicense='SIL Open Font License 1.1';u.info.openTypeOS2WeightClass=CFG['weights'][weight];u.info.versionMajor=0;u.info.versionMinor=600
     cm=tt.getBestCmap();reverse={}
     for cp,n in cm.items():reverse.setdefault(n,[]).append(cp)
     gs=tt.getGlyphSet()
@@ -183,25 +183,48 @@ def build_component(script,weight,latin=None):
             n=cmap.get(ord(char));b=boxes.get(n)
             if b and r['bounds'] and b[2]>b[0]:
                 rb=r['bounds'];xs=(rb[2]-rb[0])/(b[2]-b[0]);ys=rb[3]/b[3] if b[3]>100 and rb[3]>100 else sy
-                if char.isupper():ys*=710/690
-                factors[char]=(xs,ys,rb[0]-b[0]*xs,0,r['advance'])
+                # Below the baseline a letter gets its own vertical factor, so descenders and
+                # overshoots reach the reference depth without moving the x-height.
+                ysb=min(max(rb[1]/b[1],.2),ys*1.2) if b[1]<-3 else ys
+                factors[char]=(xs,ys,rb[0]-b[0]*xs,0,r['advance'],ysb)
+    # Light takes the Regular reference; its custom l, i and I are narrower by the stem difference.
+    light_trim=44 if weight=='Light' else 0
     for n in tt.getGlyphOrder():
         char=reverse.get(n,'');decomp=unicodedata.normalize('NFD',char) if char else '';base=decomp[0] if decomp else ''
-        xs,ys,dx,dy=sx,sy,0,0;advance=round(tt['hmtx'][n][0]*sx)
+        xs,ys,dx,dy=sx,sy,0,0;advance=round(tt['hmtx'][n][0]*sx);ysb=None;box=None
         if script=='Latin' and base in factors:
-            xs,ys,dx,dy,advance=factors[base]
-        elif script=='Latin' and char.isupper():ys*=710/690
-        if script=='Latin' and char in 'HeloIi' and len(char)==1:
-            xs=ys=1;dx=dy=0
-            advance={'H':705,'e':600,'o':664,'l':368,'i':350,'I':310}[char]
-            if weight!='Bold' and char in 'liI':advance-= {'Light':89,'Regular':45}[weight]
+            xs,ys,dx,dy,advance,ysb=factors[base]
+            # marks below the baseline (cedilla, ogonek, dot below) keep their own height
+            if any(unicodedata.combining(c)!=230 for c in decomp[1:]):ysb=None
+        if script=='Latin' and char in 'HeloIiMWwKN' and len(char)==1:
+            # K, M, N, W and w keep the box mapping for their mark anchors; their outlines are drawn in the box
+            if char not in 'MWwKN':xs=ys=1;dx=dy=0
+            ysb=None
+            box=list(ref[char]['bounds']);advance=ref[char]['advance']
+            if char in 'li':box[2]-=light_trim
+            if char in 'liI':advance-=light_trim
         esx,esy,edx,edy=extra.get(n,(1,1,0,0));transforms[n]=(xs*esx,ys*esy,dx+xs*edx,dy+ys*edy)
-        mapped=[([tuple((x*xs+dx,y*ys+dy) for x,y in seg) for seg in segs],cl) for segs,cl in captures[n]]
+        mapped=[([tuple((x*xs+dx,y*(ysb if ysb is not None and y<0 else ys)+dy) for x,y in seg) for seg in segs],cl) for segs,cl in captures[n]]
+        if script=='Latin' and len(base)==1 and base in 'bdhk' and 'n' in factors and base in factors:
+            # Ascender letters were scaled to their ascender height, which left their bowls and arches
+            # below the x-height in the lighter weights. Their x-height zone now takes the x-height
+            # scale (as n does) and only the ascender above it is stretched to the ascender height.
+            src_top=boxes[cmap[ord(base)]][3];y1=boxes[cmap[ord('n')]][3]+25;yn=factors['n'][1]
+            top=src_top*ys;stretch=(top-y1*yn)/(src_top-y1)
+            def lift(y):
+                if y<0:return y
+                y0=y/ys
+                return y0*yn if y0<=y1 else y1*yn+(y0-y1)*stretch
+            own=lambda segs:all(-30*ys<pt[1]<top+30 for s in segs for pt in s)
+            mapped=[([tuple((pt[0],lift(pt[1])) for pt in s) for s in segs] if own(segs) else segs,cl) for segs,cl in mapped]
+        if script=='Latin' and len(base)==1 and base in 'fr':
+            from english_refine import widen_stem,STEM
+            mapped=widen_stem(mapped,STEM[weight],ref[base]['bounds'][3])
         if script=='Tamil':
             from native_refine import circular_dots
             mapped,count=circular_dots(mapped);native_stats['circular_dots']=native_stats.get('circular_dots',0)+count
         pen=TTGlyphPen(None);q=Cu2QuPen(pen,max_err=.55)
-        if script=='Latin' and len(char)==1 and english(q,char,weight):stats['custom_glyphs'].append(char)
+        if script=='Latin' and len(char)==1 and english(q,char,weight,box,ref['x']['bounds'][3]):stats['custom_glyphs'].append(char)
         else:stats['sharpened_corners']+=sculpt(mapped,q,CFG['corner_limit'][weight],620 if script=='Devanagari' else 629 if script=='Bengali' else None,protect_y=protect)
         glyph=pen.glyph();tt['glyf'][n]=glyph;glyph.recalcBounds(tt['glyf']);tt['hmtx'][n]=(round(advance),getattr(glyph,'xMin',0))
     map_layout(tt,transforms,default)
@@ -230,9 +253,11 @@ Upstream uses spacing accent glyphs for several combining codepoints. Explicit
     cm=tt.getBestCmap();gs=tt.getGlyphSet();rebuilt=[]
     for cp,name in list(cm.items()):
         text=unicodedata.normalize('NFD',chr(cp))
-        if len(text)<2 or text[0] not in 'HeloIi' or not all(ord(c) in cm for c in text):continue
+        if len(text)<2 or text[0] not in 'HeloIiMWwKN' or not all(ord(c) in cm for c in text):continue
         # Preserve complex horn/ogonek constructions until their entire joining
         # outline can be edited, rather than detaching a connected accent.
+        # Latvian K and N with cedilla show a comma below; on the drawn K and N it is placed as one
+        if text[0] in 'KN' and '\u0327' in text and 0x326 in cm:text=text.replace('\u0327','\u0326')
         if any(unicodedata.combining(c) not in (230,220) for c in text[1:]):continue
         base=cm[ord(text[0])];pen=TTGlyphPen(gs);p=Cu2QuPen(pen,max_err=.55);basep=ContourPen(gs);gs[base].draw(basep)
         for segs,closed in basep.contours:
